@@ -5,10 +5,9 @@ before_install:
   - 'npm install -g bower grunt-cli'
 install:
   - 'npm cache clean'
-  - 'npm install karma-phantomjs-launcher --save'
+  - 'npm install karma-phantomjs-launcher'
   - 'export "PHANTOMJS_BIN=`which phantomjs`" '
   - 'npm install'
-  - 'bower install'
-  - 'npm update -g'
+  - 'bower install --allow-root'
 before_script:
   - 'grunt'
