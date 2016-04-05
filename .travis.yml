@@ -8,5 +8,6 @@ install:
   - 'export "PHANTOMJS_BIN=`which phantomjs`" '
   - 'npm install'
   - 'bower install'
+  - 'npm update -g'
 before_script:
   - 'grunt'
